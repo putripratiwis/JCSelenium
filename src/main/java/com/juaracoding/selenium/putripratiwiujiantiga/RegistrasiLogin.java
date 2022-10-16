@@ -1,16 +1,14 @@
 package com.juaracoding.selenium.putripratiwiujiantiga;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RegistrasiLogin {
     public static void main(String[] args) throws InterruptedException {
-        // System Property for Chrome Driver
+
         System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 
-        // Instantiate a ChromeDriver class.
         WebDriver driver=new ChromeDriver();
 
         driver.manage().window().maximize();
@@ -22,7 +20,6 @@ public class RegistrasiLogin {
         String titleName = driver.getTitle();
         System.out.println(titleName);
 
-        JavascriptExecutor js = (JavascriptExecutor) driver;
 
         Thread.sleep(3000);
 
